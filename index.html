@@ -1,37 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title> <!-- ✅ Title -->
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="calculator">
-        <div class="display" id="display">0</div>
-        <div class="buttons">
-            <button class="btn" data-number="7">7</button>
-            <button class="btn" data-number="8">8</button>
-            <button class="btn" data-number="9">9</button>
-            <button class="btn" data-operator="/">/</button>
-            <button class="btn" data-number="4">4</button>
-            <button class="btn" data-number="5">5</button>
-            <button class="btn" data-number="6">6</button>
-            <button class="btn" data-operator="*">*</button>
-            <button class="btn" data-number="1">1</button>
-            <button class="btn" data-number="2">2</button>
-            <button class="btn" data-number="3">3</button>
-            <button class="btn" data-operator="-">-</button>
-            <button class="btn" data-number="0">0</button>
-            <button class="btn" data-decimal=".">.</button>
-            <button class="btn" id="clear">C</button>
-            <button class="btn" data-operator="+">+</button>
-            <button class="btn" id="equals">=</button>
-        </div>
-    </div>
-    <script src="script.js"></script>
-</body>
+  <header>
+    <h1 class="app-title">Calculator</h1>
+    <!-- Light/Dark theme toggle -->
+  <label class="theme-switch">
+    <input type="checkbox" id="theme-toggle">
+    <span class="slider"></span>
+    <span class="label">Dark Mode</span>
+  </label>
+  </header>
 
+  <main>
+    <div class="calculator">
+      <div class="expression" id="expression"></div>
+      <div class="display" id="display">0</div>
+      <div class="buttons">
+        <button class="btn" data-number="7">7</button>
+        <button class="btn" data-number="8">8</button>
+        <button class="btn" data-number="9">9</button>
+        <button class="btn" data-operator="/">/</button>
+        <button class="btn" data-number="4">4</button>
+        <button class="btn" data-number="5">5</button>
+        <button class="btn" data-number="6">6</button>
+        <button class="btn" data-operator="*">*</button>
+        <button class="btn" data-number="1">1</button>
+        <button class="btn" data-number="2">2</button>
+        <button class="btn" data-number="3">3</button>
+        <button class="btn" data-operator="-">-</button>
+        <button class="btn" data-number="0">0</button>
+        <button class="btn" data-decimal=".">.</button>
+        <button class="btn" id="clear">C</button>
+        <button class="btn" data-operator="+">+</button>
+        <button class="btn" id="backspace">⌫</button>
+        <button class="btn" id="equals">=</button>
+      </div>
+    </div>
+    <section class="how-to-use">
+      <h2>How to Use</h2>
+      <ul>
+        <li>Click numbers or use your keyboard to type them.</li>
+        <li>Click operators (+ − × ÷) to choose the operation.</li>
+        <li>Press <b>=</b> or Enter to calculate the result.</li>
+        <li>Use <b>⌫</b> or Backspace key to delete the last digit.</li>
+        <li>Press <b>C</b> or ‘c’ to clear everything.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made by <a href="https://github.com/gokulselvam2911" target="_blank">Gokul Selvam</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
