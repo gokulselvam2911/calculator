@@ -34,7 +34,6 @@ document.querySelectorAll('.btn').forEach(button => {
     const number = button.getAttribute('data-number');
     const decimal = button.getAttribute('data-decimal');
     const operator = button.getAttribute('data-operator');
-    const clear = button.getAttribute('clear');
 
     if (number !== null) {
       currentInput += number;
