@@ -25,8 +25,32 @@ function operate(operation, a, b) {
             return divide(a, b);    
     }
 }
+let currentInput = '';
 
-console.log("5 + 3 =", operate('+', 5, 3)); 
-console.log("10 - 4 =", operate('-', 10, 4));
-console.log("6 * 7 =", operate('*', 6, 7));
-console.log("20 / 5 =", operate('/', 20, 5)); 
+const display = document.getElementById('display');
+
+document.querySelectorAll('.btn').forEach(button => {
+  button.addEventListener('click', () => {
+    const number = button.getAttribute('data-number');
+    const decimal = button.getAttribute('data-decimal');
+    const operator = button.getAttribute('data-operator');
+    const clear = button.getAttribute('clear');
+
+    if (number !== null) {
+      currentInput += number;
+      display.textContent = currentInput;
+    }
+    if (decimal !== null) {
+      currentInput += decimal;
+      display.textContent = currentInput;
+    }
+    if (operator !== null) {
+      currentInput += ` ${operator} `;
+      display.textContent = currentInput;
+    }
+    if (button.id === 'clear') {
+      currentInput = '';
+      display.textContent = '0';
+    }
+  });
+});

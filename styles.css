@@ -20,6 +20,5 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 5px; 
-  font-size: 18px;
-  padding:   
+  font-size: 18px;  
 }
