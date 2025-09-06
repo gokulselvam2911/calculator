@@ -1,8 +1,10 @@
 # Calculator Project
 
-![Calculator Preview](images/calculator_img.png)
+[![Calculator Preview](images/calculator_img.png)](https://calculator-top-gokul.netlify.app/)
 
 A simple on-screen calculator built using **HTML, CSS, and JavaScript** as part of The Odin Project: Foundations course. This project demonstrates the use of fundamental JavaScript concepts to create a fully functional calculator with a clean user interface.
+
+Try the calculator online: [Calculator on Netlify](https://calculator-top-gokul.netlify.app/)
 
 ---
 
